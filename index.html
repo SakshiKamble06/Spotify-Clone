@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Spotify Clone</title>
+    <link rel="icon" type="image/png" href ="./Assets/icon2.png">
     <link rel="stylesheet" href="./custom.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-    <div class="top-nav">
+<div class="top-nav">
     <div class="nav-left">
-        <span > 
-        <i class="fa-solid fa-house"></i></span>
-        <span class="icon">🔍</span>
+         
+        <i class="fa-brands fa-spotify"></i>
+        <i class="fa-solid fa-house"></i>
+    
+      <div class="nav-search">
+         
+        <span class="search-icon">🔍</span>
         <input type="text" placeholder="What do you want to play?">
+      </div>
     </div>
-
     <div class="nav-right">
         <a href="#" class=" Download">Premium Support Download</a>
-      <i class="fa-solid fa-download"></i><a href="#" class=" Install">Install App</a>
+        <i class="fa-solid fa-download"></i><a href="#" class=" Install">Install App</a>
         <a href="#" class="signup">Sign up</a>
         <a href="#" class="login">Log in</a>
     </div>
@@ -28,45 +33,40 @@
 
     <!-- Sidebar -->
     <aside class="sidebar">
-        <div class="logo">
-            <i class="fa-brands fa-spotify"></i>Spotify</div>
-<div class=" sidebarright">
-        <nav>
+     <div class=" sidebarright">
+         <nav>
             <a href="#">Your Library</a>
-            <button class="rightbtn">Create </button>
+            <button >Create </button>
 
-        </nav>
+         </nav>
         
-        <div class="playlist-btn">
-            <h5>Create your first playlist</h5>
-          </p> It's easy,we'll help you</p>
-           <div>
-            <button>Create playlist </button>
+         <div class="box">
+             <h5>Create your first playlist</h5>
+              <p> It's easy,we'll help you</p>
+             <div class="playlist-btn">
+               <button>Create playlist </button>
+             </div>
+         </div>
+         <div class="box" >
+              <h5> Let's find some podcasts to follow</h5>
+              <p> We'll keep you updated on new episodes</p>
+          <div class="playlist-btn ">
+               <button>Browser podcasts </button>
+          </div>
+         </div>
+         <div class="footer-link">
+                 <a href="#">Legal</a>
+                <a href="#">Safety&PrivacyCenter</a>
+                <a href="#">Privacy Policy</a>
+                 <a href="#"> Cookies</a>
+                <a href="#">About Ads</a>
+                <a href="#">Accessibility</a>
+         </div>
+               <div>
+                  <button class="lan-btn"> <i class="fa-solid fa-globe"></i>English</button>
+               </div> 
         </div>
-        <div class="playlist-btn ">
-            <h5> Let's find some podcasts to follow</h5>
-        </p> We'll keep you updated on new episodes</p>
-        </div>
-        <div >
-            <button>Browser podcasts </button>
-        
-        </div>
-
-        <div class=" base">
-
-       <ul>        <a href="">Legal</a> 
-                <a href="">Safety&PrivacyCenter</a>
-                <a href="">Privacy Policy</a>
-                <a href="">Cookies</a>
-                <a href="">About Ads</a>
-                <a href="">Accessibility</a>
-            </ul>
-            <div>
-            <button > English</button>
-            </div>
-        </div>
-    </div>
-        
+    
     </aside>
 
     <!-- Main -->
@@ -75,38 +75,49 @@
 
         <!-- Trending -->
         <section>
-            <h2>Trending Songs</h2>
-            <div class="grid trending">
-                <div >
+            <div class="trending">
+                <div class="trending-header">
+                    <h2>Trending songs</h2>
+                    <a href="#">Show all</a>
+                </div>
+            <div class="trending-cards">
+                <div class="card">
                     <img src="./Assets/Sanju 1card.jpg">
-                    <div class="info">
+                    
                         <p class="title">Sundari</p>
                         <p class="artist"><strong>Sanju Rathod</strong></p>
-                    </div>
+                    
                 </div>
-
-                <div>
+                <div class="card">
                     <img src="./Assets/Talwinder2.jpg">
-                    <div class="info">
+                   
                         <p class="title">Pal Pal </p>
                         <p class="artist"><strong>Talwinder </strong></p>
-                    </div>
+                    
                 </div>
-
-                <div >
-                    <img src="./Assets/Tulsi song.jpg">
-                    <div class="info">
-                        <p class="title">Tere Naam</p>
-                        <p class="artist">Tulsi Kumar & Darshan Raval</p>
-                    </div>
+                <div  class="card">
+                    <img src="./Assets/jeeliya.jpg">
+                   
+                        <p class="title">Jee Liya</p>
+                        <p class="artist"><strong>Adarsh Gourav and Lothika Jha</strong></p>
                 </div>
-
-                <div >
+                <div class="card">
                     <img src="./Assets/Sahiba4.jpg">
-                    <div class="info">
+                    
                         <p class="title">Sahiba</p>
-                        <p class="artist">Aditya Rikhari </p>
-                    </div>
+                        <p class="artist"><strong>Aditya Rikhari</strong>Aditya Rikhari </p>
+                </div>
+                <div class="card">
+                    <img src="./Assets/finding-her.jpg">
+                    
+                        <p class="title">Finding Her</p>
+                        <p class="artist"><strong>Kushagra Thakur</strong>Aditya Rikhari </p>
+                </div>
+                <div class="card">
+                    <img src="./Assets/terevaste.jfif">
+                    
+                        <p class="title">Tere Vaaste</p>
+                        <p class="artist"><strong> Amitabh Bhattacharya</strong> </p>
                 </div>
             </div>
         </section>
@@ -115,27 +126,20 @@
         <section>
             <h2>Popular Artists</h2>
             <div class="grid artists">
-                <div class="card circle"><img src="./Assets/Arijit singh.jfif"><p>Arijit Singh</p></div>
-                <div class="card circle"><img src="./Assets/Ajay-Atul.jpg"><p>Artist Ajay-Atul </p></div>
-                <div class="card circle"><img src="./Assets/Neha Kakker.jfif"><p>Artist Neha Kakker</p></div>
-                <div class="card circle"><img src="./Assets/BTS.jpg"><p>Artist D</p></div>
-               
-           
-           
+                <div class="artist"><img src="./Assets/Arijit singh.jfif"><h4>Arijit Singh</h4></div>
+                <div class="artist"><img src="./Assets/Ajay-Atul.jpg"><h4> Ajay-Atul </h4></div>
+                <div class="artist"><img src="./Assets/neha.jpg"><h4>Neha Kakker</h4></div>
+                <div class="artist"><img src="./Assets/BTS.jpg"><h4> BTS</h4></div>
+                <div class="artist"><img src="./Assets/Taylor Swift.jpg"><h4> Taylor Swift</h4></div>
+                <div class="artist"><img src="./Assets/AR_Rahman.jpg"><h4> AR Rahman</h4></div>
             </div>
         </section>
 
-        <section>
-            <h2>Popular alblums and singles</h2>
-         <div  class=" ">
-
-        </div>
-
-        </section>
+        
     </main>
 
 </div>
-
+<div class="foo"></div>
 <footer class="footer">
     <div class="footer-left">
         <p><strong>Preview of Spotify</strong></p>
@@ -145,6 +149,6 @@
         <button>Sign up free</button>
     </div>
 </footer>
-
+</div>
 </body>
 </html>
